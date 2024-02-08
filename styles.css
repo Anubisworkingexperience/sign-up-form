@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+#background {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+}
+
+.credits {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    color: white;
+}
+
+a {
+    color: bisque;
+}
+
