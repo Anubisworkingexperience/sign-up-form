@@ -8,42 +8,44 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="left">
-        <img src="./back.jpg" alt="woman sita and holds coffee cup while talking with man" id="background">
-        <div class="credits">Photo by <a href="https://unsplash.com/@priscilladupreez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Priscilla Du Preez 🇨🇦 </a> on <a href="https://unsplash.com/photos/woman-in-white-sweater-holding-black-round-frame-7ilpPBxTavU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a></div>
-    </div>
-    <div class="right">
-        <section>
-            <img src="./logo_pic.svg" alt="chatroom logo" class="logo">
-            <p>Connect with people around the world using chatroom! Find new friends or connect with your family and colleagues. The choice is yours!</p>
-            <p>Start using our simple but powerful messenger right now.</p>
-        </section>
-        <section>
-            <p>Let's get started!</p>
-            <div>
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" name="user_firstName" id="first_name">
-            </div>
-            <div>
-                <label for="last_name">LAST NAME</label>
-                <input type="text" name="user_lastName" id="last_name"></div>
-            <div>
-                <label for="email">EMAIL</label>
-                <input type="email" name="user_email" id="email"></div>
-            <div>
-                <label for="number">PHONE NUMBER</label>
-                <input type="tel" name="user_phone" id="number"></div>
-            <div>
-                <label for="password">PASSWORD</label>
-                <input type="password" name="user_password" id="password"></div>
-            <div>
-                <label for="confirm">CONFIRM PASSWORD</label>
-                <input type="password" name="user_confirmPassword" id="confirm"></div>
-        </section>
-        <section>
-            <button type="submit">Create account</button>
-            <p>Already have an account? <span>Log in</span></p>
-        </section>
+    <div class="container">
+        <div class="left">
+            <img src="./back.jpg" alt="woman sita and holds coffee cup while talking with man" id="background">
+            <div class="credits">Photo by <a href="https://unsplash.com/@priscilladupreez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Priscilla Du Preez 🇨🇦 </a> on <a href="https://unsplash.com/photos/woman-in-white-sweater-holding-black-round-frame-7ilpPBxTavU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a></div>
+        </div>
+        <div class="right">
+            <section class="desc">
+                <img src="./logo_pic.svg" alt="chatroom logo" class="logo">
+                <p>Connect with people around the world using chatroom! Find new friends or connect with your family and colleagues. The choice is <em>yours!</em></p>
+                <p>Try out our simple but powerful messenger right <em>now</em>.</p>
+            </section>
+            <section class="form">
+                <p class="start">Let's get started!</p>
+                <div>
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="user_firstName" id="first_name">
+                </div>
+                <div>
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="user_lastName" id="last_name"></div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="user_email" id="email"></div>
+                <div>
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="tel" name="user_phone" id="number"></div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="user_password" id="password"></div>
+                <div>
+                    <label for="confirm">CONFIRM PASSWORD</label>
+                    <input type="password" name="user_confirmPassword" id="confirm"></div>
+            </section>
+            <section class="register">
+                <button type="submit">Create account</button>
+                <p>Already have an account? <span class="login">Log in</span></p>
+            </section>
+        </div>
     </div>
 </body>
 </html>
