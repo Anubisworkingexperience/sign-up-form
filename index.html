@@ -6,7 +6,7 @@
     <title>Chatroom</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <script src="./validation.js"></script>
+    <script src="./validation.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -30,17 +30,17 @@
                     <div class="row">
                         <div>
                             <label for="first_name">FIRST NAME*</label>
-                            <p><input type="text" name="user_firstName" id="first_name" required></p>
+                            <p><input type="text" name="user_firstName" id="first_name" required autocomplete="given-name"></p>
                         </div>
                         <div>
                             <label for="last_name">LAST NAME*</label>
-                            <p><input type="text" name="user_lastName" id="last_name" required></p>
+                            <p><input type="text" name="user_lastName" id="last_name" required autocomplete="family-name"></p>
                         </div>
                     </div>
                     <div class="row">
                         <div>
                             <label for="email">EMAIL*</label>
-                            <p><input type="email" name="user_email" id="email" required></p>
+                            <p><input type="email" name="user_email" id="email" required autocomplete="email"></p>
                             </div>
                         <div>
                             <label for="number">PHONE NUMBER*</label>
@@ -50,16 +50,17 @@
                     <div class="row">
                         <div>
                             <label for="password">PASSWORD*</label>
-                            <p><input class="pass" type="password" name="user_password" id="password" required></p>
+                            <p><input class="pass" type="password" name="user_password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"></p>
                         </div>
                         <div>
                             <label for="confirm">CONFIRM PASSWORD*</label>
                             <p><input type="password" class="confirm" name="user_confirmPassword" id="confirm" required></p>
                         </div>
+                        <div class="message"></div>
                     </div>
             </section>
             <section class="register">
-                <button type="submit">Create account</button>
+                <button type="submit" class="submit">Create account</button>
                 <p>Already have an account? <a href="#" class="login">Log in</a></p>
             </section>
         </form>
